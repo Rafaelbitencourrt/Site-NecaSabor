@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(168, 168, 168, 0.863);
+}
+
+.whatsapp {
+  position: fixed;
+  top: 560px;
+  left: 1300px;
+}
+
+header {
+  overflow: hidden;
+  background-size: auto;
+  background-color: hsl(350, 93%, 89%);
+  font-size: 18px;
+}
+header img {
+  border-radius: 50%;
+  float: left;
+  width: 300px;
+  margin: 30px 100px;
+  padding-top: 10px;
+}
+
+.menu {
+  float: right;
+}
+.menu ul {
+  list-style: none;
+}
+/*menu horizontal*/
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  padding: 2px 5px;
+  line-height: 350px;
+  margin-left: 10px;
+  background-color: hsl(350, 93%, 89%);
+  font-size: 24px;
+  margin-right: 60px;
+  width: 100%;
+
+  /*visual*/
+  color: #333;
+  text-decoration: none;
+  border-bottom: 3px solid #312020;
+}
+/*layout referente ao mouse*/
+.menu ul li a:hover {
+  background-color: rgb(168, 142, 142);
+  color: #6d6d6d;
+  border-bottom: 3px solid #333;
+}
+
+.home {
+  float: right;
+  text-align: center;
+  margin-right: 150px;
+  font-size: 40px;
+  margin-top: 100px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#home {
+  background-image: url(imagens/ft5.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+#quemsomos {
+  background-color: seashell;
+  overflow: auto;
+  display: inline-block;
+  border: none;
+
+  /*  text-align: center;
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; 
+  width: 100%;
+  padding: 120px; */
+}
+
+#quemsomos img {
+  width: 400px;
+  float: left;
+  padding: 30px;
+  background-size: cover;
+}
+#quemsomos h1 {
+  text-align: center;
+  padding: 10px;
+  padding-top: 100px;
+}
+#quemsomos p {
+  padding: 10px 30px 30px 10px;
+  text-align: justify;
+  text-indent: 35px;
+  line-height: 1.2;
+}
+
+#galeria {
+  display: inline-block;
+}
+#galeria h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.galeria div {
+  display: inline-block;
+}
+.galeria img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+}
+
+footer {
+  background-color: rgba(168, 168, 168, 0.863);
+  width: 100%;
+  display: inline-block;
+}
+
+#contato {
+  width: 100%;
+}
+
+#contato ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.contato {
+  padding: 20px;
+  float: left;
+}
+.contato h1,
+.contato ul {
+  padding: 10px;
+}
+.atendimento {
+  display: inline-block;
+  margin-left: 280px;
+  padding: 20px;
+}
+.atendimento h1,
+.atendimento p {
+  padding: 10px;
+}
+
+.redes {
+  padding: 20px;
+  float: right;
+}
+.redes h1,
+.redes ul {
+  padding: 10px;
+}
+.redes ul li a {
+  text-decoration: none;
+}
+.redes img {
+  border-radius: 50%;
+}
+
+.info {
+  display: inline-block;
+  padding-left: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.info h1,
+.info h2,
+.info ul,
+.info a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.info h2 {
+  max-width: 500px;
+}
+.formcontainer {
+  float: right;
+  max-width: 230px;
+  overflow: hidden;
+  margin: 30px;
+  background-color: #ffffffbb;
+  padding: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  border: none;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+input[type='submit'] {
+  color: white;
+  background-color: turquoise;
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+section {
+  display: inline-block;
+}
+
+#contatos {
+  background-image: url(./imagens/cake.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  header {
+    display: block;
+  }
+  header img {
+    border-radius: none;
+    float: none;
+    margin: 0px;
+    padding-top: 0px;
+  }
+  .logo {
+    width: 300px;
+    border: none;
+    text-align: center;
+  }
+
+  .menu {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .menu ul li {
+    display: block;
+    text-align: center;
+  }
+  .menu ul li a {
+    line-height: 0px;
+    border-bottom: none;
+  }
+  .menu li {
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  footer div {
+    display: block;
+    float: none;
+    font-size: 10px;
+  }
+  .atendimento {
+    margin: 0px;
+    float: none;
+  }
+  .redes {
+    float: none;
+    margin: 0px;
+  }
+}
